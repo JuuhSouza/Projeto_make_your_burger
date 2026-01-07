@@ -1,6 +1,6 @@
 <template>
     <div id="main-banner">
-        <h1>Burger banner</h1>
+        <h1>Faça seu Hamburguer</h1>
     </div>
     
 </template>
@@ -12,13 +12,9 @@
 </script>
 
 <style scoped>
-    :root{
-        --banner-color: #ff0000;
-    }
-
     #main-banner{
         background-image: url('../assets/img/burger.jpg');
-        background-position: 0 -250px;
+        background-position: 0 -190px;
         background-size: cover;
         background-repeat: no-repeat;
         height: 500px;
@@ -28,10 +24,11 @@
     }
 
     #main-banner h1{
-        color: white;
+        color: var(--color-p);
         text-align: center;
-        font-size:60px;
-        background-color: rgb(60, 60, 60);
-        padding: 20px 40px;
+        font-size:3em;
+        background-color: var(--background-color);
+        padding: 20px 20px;
+        border-radius: 20px 5%;
     }
 </style>

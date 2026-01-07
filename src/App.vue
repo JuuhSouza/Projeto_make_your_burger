@@ -1,6 +1,6 @@
 <template>
 
-  <nav-bar :logo="logo_src" :alt="app_name"/>
+  <NavBar :logo="logo_src" :alt="app_name"/>
   <router-view/>
   <Footer/>
 
@@ -9,6 +9,7 @@
 <script>
   import NavBar from './components/NavBar.vue';
   import Footer from './components/Footer.vue';
+  import logo from './assets/img/logo.png';
 
   export default {
     components: {
@@ -16,7 +17,7 @@
     },
     data(){
       return{
-        logo_src: "/img/logo.png",
+        logo_src: logo,
         app_name: "Make Your Burguer"
       }
     }
@@ -26,7 +27,7 @@
 
 <style>
   *{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--font);
     padding: 0;
     margin: 0;
     box-sizing: border-box;

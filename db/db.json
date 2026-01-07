@@ -79,12 +79,43 @@
   ],
   "burgers": [
     {
-      "id": "2533",
-      "nome": "Eduauada",
-      "pao": "Italiano Branco",
+      "id": "85ed",
+      "nome": "Júlia",
+      "pao": "Integral",
       "carne": "Alcatra",
-      "opcionais": [],
+      "opcionais": [
+        "Bacon",
+        "Cebola roxa",
+        "Cheddar"
+      ],
       "status": "Finalizado"
+    },
+    {
+      "id": "4baa",
+      "nome": "Eduaua",
+      "pao": "Italiano Branco",
+      "carne": "Picanha",
+      "opcionais": [
+        "Bacon",
+        "Cebola roxa",
+        "Cheddar",
+        "Tomate"
+      ],
+      "status": "Em produção"
+    },
+    {
+      "id": "fcf1",
+      "nome": "seila",
+      "pao": "3 Queijos",
+      "carne": "Alcatra",
+      "opcionais": [
+        "Bacon",
+        "Cheddar",
+        "Tomate",
+        "Cebola roxa",
+        "Pepino"
+      ],
+      "status": "solicitado"
     }
   ]
 }

@@ -114,7 +114,7 @@
 
 <style acoped> 
     #burger-form {
-        max-width: 400px;
+        max-width: 300px;
         margin: 0 auto;
     }
 
@@ -127,14 +127,20 @@
     label{
         font-weight: bold;
         margin-bottom:15px;
-        color: red;
+        color:var(--title-form-color);
         padding: 15px 10px;
-        border-left: 4px solid blue;
+        font-family: var(--font);
+        border-left: 4px solid var(--border-left);
     }
 
     input, select{
-        padding: 5px 10px;
+        padding: 10px 10px;
         width: 300px;
+        font-size:var(--font-size-input);
+        color:var(--input-color);
+        font-family: var(--font);
+        cursor:pointer;
+
     }
 
     #opcionais-container{
@@ -164,18 +170,21 @@
     }
 
     .submit-btn{
-        background-color: red;
+        background-color: var(---background-btn-form);
         color: white;
         font-weight: bold;
+        font-family: var(--font);
         border: none;
         padding: 10px;
         cursor: pointer;
         transition: all .5s ease;
+        border-radius: 20px 5%;
         font-size: 20px;
     }
 
     .submit-btn:hover{
-        background-color: blue;
+        opacity: .5;
+        transform: rotateY(-10deg);
     }
 
 </style>

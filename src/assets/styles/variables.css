@@ -1,0 +1,38 @@
+:root{
+    /* FONTES */
+    --font:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-p:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --font-size-title:2em;
+    --font-size-input:1em;
+
+    /* NAV BAR */
+    --nav-background-color:#262626;
+    --nav-color:#FFFFFF;
+    --nav-color-hover:#7D89A1;
+    
+    /* BANNER */
+    --color-p:#f4f4f4bb;
+    --background-color:#26010477;
+
+    /* CARDS  */
+    --title-color-card:#260101;
+    --card-border:#F2CF63;
+    --p-color-card:#590202;
+    --box-shadow-card:#757575;
+
+    /* FORMULARIO */
+    --title-form-color:#353535;
+    --input-color:#262626;
+    --input-background:red;
+    --border-form:#590202;
+    --border-left:#F2CF63;
+    ---background-btn-form:#590202;
+    
+    /* MENSSAGE */
+    --color-men:black;
+    --background-color-men:#c9dbe6;
+
+    /* DASHBOARD */
+    --border-dash:#F2CF63;
+    --background-delet:#73020C;
+}

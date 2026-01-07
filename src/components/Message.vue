@@ -15,9 +15,9 @@
 
 <style scoped>
     .mensage-container{
-       color:black;
-       background-color: rgb(226, 226, 226);
-       border: 2px solid black;
+       color:var(--color-men);
+       background-color: var(--background-color-men);
+       /* border: 2px solid var( --border-left); */
        border-radius: 5px;
        padding: 10px;
        max-width: 400px;

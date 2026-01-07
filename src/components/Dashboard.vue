@@ -125,18 +125,18 @@
 #burger-table-head{
     font-weight: bold;
     padding: 12px;
-    border-bottom: 3px solid red;
+    border-bottom: 2px solid var(--border-dash);
 }
 
 #burger-table-head div,
 .burger-table-row div{
-    width: 18%;
+    width: 19%;
 }
 
 .burger-table-row{
     width: 100%;
     padding: 12px;
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid var(--border-form);
 }
 
 #burger-table-head .order-id,
@@ -147,18 +147,19 @@
 .burger-table-row div:last-child{
     display: flex;
     align-items: center;
+    gap: 6px;
 }
 
 select{
-    width: 120px;
+    width: 9em;
 }
 
-
 .delete-btn{
-    background-color: red;
+    background-color: var(--background-delet);
     color: white;
     font-weight: bold;
-    border: 2px solid blue;
+    border: none;
+    border-radius: 10px 5%;
     padding: 10px;
     font-size:16px;
     margin: 0 auto;
