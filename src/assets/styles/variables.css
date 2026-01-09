@@ -30,9 +30,12 @@
     
     /* MENSSAGE */
     --color-men:black;
-    --background-color-men:#c9dbe6;
+    --background-color-men:#f2ce63c0;
 
     /* DASHBOARD */
     --border-dash:#F2CF63;
     --background-delet:#73020C;
+
+    /* FOOTER */
+    --color-text: #F2CF63;
 }

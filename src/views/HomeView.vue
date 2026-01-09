@@ -25,7 +25,7 @@ export default {
     font-family: var(--font);
     font-size: 2em;
     margin: 1em 10px;
-    border-top: 2px solid var(--border-form);
+    margin-top: 1em;
   }
 
 </style>

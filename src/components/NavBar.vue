@@ -12,7 +12,7 @@
 
         <div id="nav-links" :class="{active: menuOpen}">
             <router-link to="/" @click="closeMenu"> Inicio </router-link> 
-            <router-link to="/pedidos" @click="closeMenu"> Pedidos </router-link>
+            <router-link to="/pedidos" @click="closeMenu"> Dashboard </router-link>
         </div>
     </nav>
 </template>
@@ -96,6 +96,7 @@
         flex-direction: column;
         box-shadow: 0 4px 10px rgba(0,0,0,.3);
         border-radius: 8px;
+        z-index: 100;
     }
 
     #nav-links.active{

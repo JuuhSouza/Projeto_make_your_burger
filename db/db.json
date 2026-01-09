@@ -91,19 +91,6 @@
       "status": "Finalizado"
     },
     {
-      "id": "4baa",
-      "nome": "Eduaua",
-      "pao": "Italiano Branco",
-      "carne": "Picanha",
-      "opcionais": [
-        "Bacon",
-        "Cebola roxa",
-        "Cheddar",
-        "Tomate"
-      ],
-      "status": "Em produção"
-    },
-    {
       "id": "fcf1",
       "nome": "seila",
       "pao": "3 Queijos",
@@ -115,7 +102,59 @@
         "Cebola roxa",
         "Pepino"
       ],
+      "status": "Solicitado"
+    },
+    {
+      "id": "24ee",
+      "nome": "Eduuh",
+      "pao": "Italiano Branco",
+      "carne": "Picanha",
+      "opcionais": [
+        "Salame",
+        "Bacon",
+        "Cheddar",
+        "Tomate",
+        "Cebola roxa"
+      ],
       "status": "solicitado"
+    },
+    {
+      "id": "956c",
+      "nome": "Yuri",
+      "pao": "Parmesão e Orégano",
+      "carne": "Veggie burger",
+      "opcionais": [
+        "Bacon",
+        "Salame"
+      ],
+      "status": "Solicitado"
+    },
+    {
+      "id": "ee3a",
+      "nome": "Luca",
+      "pao": "3 Queijos",
+      "carne": "Picanha",
+      "opcionais": [
+        "Cheddar",
+        "Tomate",
+        "Cebola roxa",
+        "Pepino",
+        "Salame",
+        "Bacon"
+      ],
+      "status": "Finalizado"
+    },
+    {
+      "id": "2857",
+      "nome": "Eduzinha do pix",
+      "pao": "Italiano Branco",
+      "carne": "Veggie burger",
+      "opcionais": [
+        "Cheddar",
+        "Bacon",
+        "Tomate"
+      ],
+      "status": "Finalizado"
     }
   ]
 }

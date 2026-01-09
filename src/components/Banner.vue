@@ -1,34 +1,81 @@
 <template>
-    <div id="main-banner">
-        <h1>Faça seu Hamburguer</h1>
-    </div>
+  <section class="parallax-container">
+    <div class="parallax-bg"></div>
     
+    <div v-observe-visibility="onElementObserved" :class="['content', { 'is-visible': visible }]">
+      <h1>Monte seu Burger</h1>
+      <p>A experiência artesanal definitiva.</p>
+    </div>
+  </section>
 </template>
 
 <script>
     export default {
-        name : 'Banner'
+        name : 'Banner',
+data() {
+    return {
+      visible: false
     }
+  },
+  methods: {
+    // ativar a animação Intersection Observer
+    onElementObserved() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            this.visible = true;
+          }
+        });
+      }, { threshold: 0.3 }); // Dispara quando 30% do elemento estiver visível
+
+      observer.observe(this.$el);
+    }
+  },
+  mounted() {
+    this.onElementObserved();
+  }
+}
 </script>
 
 <style scoped>
-    #main-banner{
-        background-image: url('../assets/img/burger.jpg');
-        background-position: 0 -190px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 500px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
+   .parallax-container {
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    #main-banner h1{
-        color: var(--color-p);
-        text-align: center;
-        font-size:3em;
-        background-color: var(--background-color);
-        padding: 20px 20px;
-        border-radius: 20px 5%;
-    }
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-image: url('../assets/img/burger.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.content {
+  text-align: center;
+  color: var(--color-p);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 2s ease-out;
+}
+
+.content.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
 </style>

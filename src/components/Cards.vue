@@ -8,7 +8,7 @@
 
 <div class="container">
     <div class="card-info">
-        <div class="title">
+        <div class="title-img">
             <img src="../assets/img/logo.png" alt="">
         </div>
         <div class="content">
@@ -17,11 +17,11 @@
     </div>
 
     <div class="card-info">
-        <div class="title">
+        <div class="title-img">
             <img src="../assets/img/pedidosIcone.png" alt="">
         </div>
         <div class="content">
-            <p>Após realizar o pedido, ele é enviado diretamente para o nosso sistema. No dashboard, é possível acompanhar o progresso em tempo real, visualizar a fila de produção e atualizar o status de cada burger.</p>
+            <p>No dashboard, é possível acompanhar o progresso em tempo real, visualizar a fila de produção e atualizar o status de cada burger.</p>
         </div>
     </div>
 </div>
@@ -38,6 +38,7 @@
 <style scoped>
 .title-features{
   margin: 1%;
+  margin-top: -2em ;
 }
 
 .title-features h1 {
@@ -57,14 +58,14 @@
 
 .card-info {
   padding: 2em;
-  margin: 2em 2.5em;
+  margin: 1em 1em;
   border: 2px solid var(--card-border);
   border-radius: 20px;
   transition: all .5s ease;
 }
 
 .card-info:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px #f2ce638b;
   transform: rotateY(-10deg);
   border: none;
 }
@@ -77,17 +78,22 @@
   font-size: 2em;
 }
 
-.title img {
-  margin: 12px;
-  width: 20%;
+.title-img {
   align-items: center;
   text-align: center;
-  margin-left: 40%;
+}
+
+.title-img img {
+  width: 5em;
+  margin: 12px;
+  align-items: center;
+  text-align: center;
 }
 
 .content p {
   color: var(--p-color-card);
   font-size: 1em;
+  padding: 0 2em;
   text-align: center;
   font-family: var(--font-p);
 }
