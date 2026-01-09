@@ -105,20 +105,6 @@
       "status": "Solicitado"
     },
     {
-      "id": "24ee",
-      "nome": "Eduuh",
-      "pao": "Italiano Branco",
-      "carne": "Picanha",
-      "opcionais": [
-        "Salame",
-        "Bacon",
-        "Cheddar",
-        "Tomate",
-        "Cebola roxa"
-      ],
-      "status": "solicitado"
-    },
-    {
       "id": "956c",
       "nome": "Yuri",
       "pao": "Parmesão e Orégano",
@@ -155,6 +141,34 @@
         "Tomate"
       ],
       "status": "Finalizado"
+    },
+    {
+      "id": "8c39",
+      "nome": "Ingridgatinha",
+      "pao": "Parmesão e Orégano",
+      "carne": "Alcatra",
+      "opcionais": [
+        "Bacon",
+        "Tomate",
+        "Cheddar",
+        "Cebola roxa",
+        "Pepino"
+      ],
+      "status": "solicitado"
+    },
+    {
+      "id": "20cf",
+      "nome": "FGAbiarle",
+      "pao": "3 Queijos",
+      "carne": "Maminha",
+      "opcionais": [
+        "Cheddar",
+        "Bacon",
+        "Cebola roxa",
+        "Tomate",
+        "Pepino"
+      ],
+      "status": "solicitado"
     }
   ]
 }

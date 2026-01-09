@@ -7,7 +7,7 @@
                 <div> Cliente: </div>
                 <div> Pão: </div>
                 <div>Carne: </div>
-                <div>Opcionais: </div>
+                <div>Complementos: </div>
                 <div>Ações: </div>
             </div>
         </div>

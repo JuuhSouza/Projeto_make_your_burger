@@ -7,7 +7,7 @@
                          <label for="nome"> Nome do cliente: </label>
                     </div>
                          <div class="input-field">
-                             <input type="text" id="nome" name="nome" v-model="nome" placeholder="Digite seu nome">
+                             <input type="text" id="nome" name="nome" v-model="nome" placeholder="Digite seu nome" required>
                         
                         </div>
             </div>
@@ -18,7 +18,7 @@
                        <!--  <span class="step-number"> 02 </span> -->
                          <label for="pao"> Escolha o pão : </label>
                          <div class="input-field">
-                              <select name="pao" id="pao" v-model="pao">
+                              <select name="pao" id="pao" v-model="pao" required>
                             <option v-for="pao in paes" :key="pao.id" :value="pao.tipo"> {{pao.tipo}}</option>
                             </select>
                          </div>
@@ -30,7 +30,7 @@
                         <!-- <span class="step-number"> 03 </span> -->
                             <label for="carne"> Escolha a carne : </label>
                          <div class="input-field">
-                              <select name="carne" id="carne" v-model="carne">
+                              <select name="carne" id="carne" v-model="carne" required>
                              <option v-for="carne in carnes" :key="carne.id" :value="carne.tipo"> {{carne.tipo}}</option>
                             </select>
                          </div>
@@ -41,7 +41,7 @@
                 <div class="card-step">
                     <div class="card-header">
                        <!--  <span class="step-number"> 04 </span> -->
-                             <label id="opcionais-title" for="opcionais"> Escolha os opcionais : </label>
+                             <label id="opcionais-title" for="opcionais"> Escolha os complementos : </label>
                         
                     <div id="opcionais-container" class="input-container">
                         <div class="checkbox-container" v-for="opcional in opcionaisdata" :key="opcional.id" >
@@ -53,7 +53,7 @@
                 </div>
                     <div class="input-container">
                         <input type="submit" class="submit-btn" value="Criar meu burger!">
-                        
+
                     </div>
                     <Message :msg="msg" v-show="msg"/>
                 </form>
@@ -120,7 +120,7 @@
                 this.nome = "";
                 this.carne = "";
                 this.pao = "";
-                this.opcionais = "";
+                this.opcionais = [];
             }
         },
         mounted(){
