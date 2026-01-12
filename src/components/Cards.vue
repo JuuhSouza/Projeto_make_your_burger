@@ -4,8 +4,6 @@
         Serviços oferecidos
     </h1>
 </div>
-
-
 <div class="container">
     <div class="card-info">
         <div class="title-img">

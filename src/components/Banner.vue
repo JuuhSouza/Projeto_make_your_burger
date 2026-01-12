@@ -2,8 +2,8 @@
   <section class="parallax-container">
     <div class="parallax-bg"></div>
     
-    <div v-observe-visibility="onElementObserved" :class="['content', { 'is-visible': visible }]">
-      <h1>Monte seu Burger</h1>
+    <div v-observe-visibility="onElementObserved" :class="['content', { 'is-visible': visible }]"> <!-- scroll da pagina -->
+      <h1>Monte seu Hamburguer</h1>
       <p>A experiência artesanal definitiva.</p>
     </div>
   </section>
@@ -27,7 +27,6 @@ data() {
           }
         });
       }, { threshold: 0.3 }); // Dispara quando 30% do elemento estiver visível
-
       observer.observe(this.$el);
     }
   },

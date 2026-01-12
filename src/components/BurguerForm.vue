@@ -8,10 +8,8 @@
                     </div>
                          <div class="input-field">
                              <input type="text" id="nome" name="nome" v-model="nome" placeholder="Digite seu nome" required>
-                        
                         </div>
             </div>
-    
             <!-- PÃES -->
                 <div class="card-step">
                     <div class="card-header">
@@ -36,7 +34,6 @@
                          </div>
                     </div>
                 </div>
-
                  <!-- OPCIONAIS -->
                 <div class="card-step">
                     <div class="card-header">
@@ -58,7 +55,6 @@
                     <Message :msg="msg" v-show="msg"/>
                 </form>
     </div>
-    
 </template>
 
 <script>
@@ -75,7 +71,6 @@
                 pao: null,
                 carne: null,
                 opcionais: [],
-
                 msg: null
             }
         },
@@ -132,7 +127,7 @@
     }
 </script>
 
-<style acoped> 
+<style scoped> 
     .card-container-name{
     padding: 40px 20px;
     display: flex;

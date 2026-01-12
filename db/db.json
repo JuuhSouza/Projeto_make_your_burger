@@ -54,11 +54,11 @@
         "tipo": "Tomate"
       },
       {
-        "id": 4,
+        "id": 5,
         "tipo": "Cebola roxa"
       },
       {
-        "id": 4,
+        "id": 6,
         "tipo": "Pepino"
       }
     ]
@@ -79,94 +79,23 @@
   ],
   "burgers": [
     {
-      "id": "85ed",
-      "nome": "Júlia",
-      "pao": "Integral",
-      "carne": "Alcatra",
-      "opcionais": [
-        "Bacon",
-        "Cebola roxa",
-        "Cheddar"
-      ],
-      "status": "Finalizado"
-    },
-    {
-      "id": "fcf1",
-      "nome": "seila",
-      "pao": "3 Queijos",
-      "carne": "Alcatra",
-      "opcionais": [
-        "Bacon",
-        "Cheddar",
-        "Tomate",
-        "Cebola roxa",
-        "Pepino"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "956c",
-      "nome": "Yuri",
-      "pao": "Parmesão e Orégano",
-      "carne": "Veggie burger",
-      "opcionais": [
-        "Bacon",
-        "Salame"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "ee3a",
-      "nome": "Luca",
-      "pao": "3 Queijos",
-      "carne": "Picanha",
-      "opcionais": [
-        "Cheddar",
-        "Tomate",
-        "Cebola roxa",
-        "Pepino",
-        "Salame",
-        "Bacon"
-      ],
-      "status": "Finalizado"
-    },
-    {
-      "id": "2857",
-      "nome": "Eduzinha do pix",
+      "id": "f2a9",
+      "nome": "A",
       "pao": "Italiano Branco",
       "carne": "Veggie burger",
       "opcionais": [
-        "Cheddar",
-        "Bacon",
+        "Salame",
         "Tomate"
       ],
-      "status": "Finalizado"
+      "status": "Solicitado"
     },
     {
-      "id": "8c39",
-      "nome": "Ingridgatinha",
-      "pao": "Parmesão e Orégano",
+      "id": "9cf2",
+      "nome": "32",
+      "pao": "Italiano Branco",
       "carne": "Alcatra",
       "opcionais": [
-        "Bacon",
-        "Tomate",
-        "Cheddar",
-        "Cebola roxa",
-        "Pepino"
-      ],
-      "status": "solicitado"
-    },
-    {
-      "id": "20cf",
-      "nome": "FGAbiarle",
-      "pao": "3 Queijos",
-      "carne": "Maminha",
-      "opcionais": [
-        "Cheddar",
-        "Bacon",
-        "Cebola roxa",
-        "Tomate",
-        "Pepino"
+        "Salame"
       ],
       "status": "solicitado"
     }

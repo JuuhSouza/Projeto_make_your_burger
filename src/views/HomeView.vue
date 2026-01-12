@@ -11,7 +11,7 @@
   import Banner from '../components/Banner.vue';
   import BurguerForm from '../components/BurguerForm.vue';
   import Cards from '../components/Cards.vue';
-
+ 
 export default {
   name: "HomeView",
   components: {
@@ -27,5 +27,4 @@ export default {
     margin: 1em 10px;
     margin-top: 1em;
   }
-
 </style>

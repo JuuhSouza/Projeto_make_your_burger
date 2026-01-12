@@ -60,7 +60,7 @@
     #nav a{
         color: var(--nav-color);
         text-decoration: none;
-        margin: 12px;
+        margin: 5px;
         transition: all .4s ease;
         font-size: 1.2em;
     }

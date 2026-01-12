@@ -22,7 +22,7 @@
                         <li v-for="(opcional, index) in burger.opcionais" :key="index"> {{ opcional }} </li>
                     </ul>
                 </div>
-                <div>
+                <div class="btn-acao">
                     <select name="status" class="status" @change="updateBurger($event, burger.id)">
                     <option v-for="s in status" :key="s.id" :value="s.tipo" :selected="burger.status == s.tipo"> <!-- :selected faz com q todos os campos estejam com o status de solicitado ao iniciar-->
                         {{ s.tipo }}</option>
@@ -57,7 +57,6 @@
                 
                 this.burgers = data;
 
-                console.log(this.burgers);
                 /* RESGATAR STATUS */
                 this.getStatus();
             },
@@ -79,8 +78,6 @@
 
                 /* limpar msg */
                 setTimeout(() => this.msg = "", 4000)
-
-
                 this.getPedidos();
             },
             async updateBurger(event, id){
@@ -98,9 +95,6 @@
 
                 /* limpar msg */
                 setTimeout(() => this.msg = "", 4000)
-
-                console.log(res);
-
             }
         },
         mounted() {
@@ -150,8 +144,12 @@
     gap: 6px;
 }
 
-select{
-    width: 9em;
+.btn-acao select{
+    padding: 6px;
+    border-radius: 10px 5%;
+    font-size: 16px;
+    border: 1px solid var(--border-dash);
+    cursor: pointer;
 }
 
 .delete-btn{
