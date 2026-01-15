@@ -12,8 +12,8 @@
             </div>
         </div>
         <div id="burger-table-rows">
-            <div class="burger-table-row" v-for="burger in burgers" :key="burger.id">
-                <div class="order-number"> {{ burger.id }} </div>
+            <div class="burger-table-row" v-for="(burger) in burgers" :key="burger.id">
+                <div class="order-number"> {{ burger.id}} </div>
                 <div>{{ burger.nome }}</div>
                 <div>{{ burger.pao }}</div>
                 <div> {{ burger.carne }}</div>
@@ -24,7 +24,7 @@
                 </div>
                 <div class="btn-acao">
                     <select name="status" class="status" @change="updateBurger($event, burger.id)">
-                    <option v-for="s in status" :key="s.id" :value="s.tipo" :selected="burger.status == s.tipo"> <!-- :selected faz com q todos os campos estejam com o status de solicitado ao iniciar-->
+                    <option v-for="s in status" :key="s.id" :value="s.tipo" :selected="burger.status == s.tipo">
                         {{ s.tipo }}</option>
                     </select>
                     <button class="delete-btn" @click="deleteBurger(burger.id)"> Cancelar</button>
@@ -56,8 +56,6 @@
                 const data = await req.json();
                 
                 this.burgers = data;
-
-                /* RESGATAR STATUS */
                 this.getStatus();
             },
             async getStatus(){
@@ -65,35 +63,30 @@
                 const data = await req.json();
 
                 this.status = data;
-
             },
             async deleteBurger(id){
                 const req = await fetch(`http://localhost:3001/burgers/${id}`,{
                     method : "DELETE"
                 });
                 const res = await req.json();
-            
-                /* MENSAGEMD E PEDIDO DELETADO */
+
                 this.msg = `Pedido removido com sucesso!!`
 
-                /* limpar msg */
                 setTimeout(() => this.msg = "", 4000)
                 this.getPedidos();
             },
             async updateBurger(event, id){
-                const option = event.target.value; /* saber qual opção esta sendo selecionada */
-                const dataJson = JSON.stringify({status: option}); /* atualizar no banco */
+                const option = event.target.value;
+                const dataJson = JSON.stringify({status: option});
                 const req = await fetch(`http://localhost:3001/burgers/${id}`,{
                     method: "PATCH",
                     headers: { "content-Type": "application/json" },
                     body: dataJson
-                }); /* acessar no id da api e atualizar o status */
+                });
                 const res = await req.json();
 
-                /*  colocar mensagem no sistema */
                 this.msg = `Pedido N° ${res.id} foi atualizado para ${res.status}`
 
-                /* limpar msg */
                 setTimeout(() => this.msg = "", 4000)
             }
         },
@@ -107,6 +100,8 @@
 #burger-table{
     max-width: 1200px;
     margin: 0 auto;
+    min-height: 300px;
+    padding-bottom: 50px;
 } 
 
 #burger-table-head,

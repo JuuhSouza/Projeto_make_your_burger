@@ -74,7 +74,7 @@ footer .menu li a:hover {
     opacity: .6;
 }
 
-footer .menu li .router-link-active { /* deixar o link marcado na pagina atual */
+footer .menu li .router-link-active {
     color: #fcba03 !important;
     font-weight: bold;
     opacity: 1;

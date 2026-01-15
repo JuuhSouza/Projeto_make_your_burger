@@ -3,7 +3,6 @@
             <form id="burger-form" @submit="createBurger">
                 <div class="card-step">
                     <div class="card-header">
-                        <!-- <span class="step-number"> 01 </span> -->
                          <label for="nome"> Nome do cliente: </label>
                     </div>
                          <div class="input-field">
@@ -13,7 +12,6 @@
             <!-- PÃES -->
                 <div class="card-step">
                     <div class="card-header">
-                       <!--  <span class="step-number"> 02 </span> -->
                          <label for="pao"> Escolha o pão : </label>
                          <div class="input-field">
                               <select name="pao" id="pao" v-model="pao" required>
@@ -25,7 +23,6 @@
                 <!-- CARNES -->
                 <div class="card-step">
                     <div class="card-header">
-                        <!-- <span class="step-number"> 03 </span> -->
                             <label for="carne"> Escolha a carne : </label>
                          <div class="input-field">
                               <select name="carne" id="carne" v-model="carne" required>
@@ -37,7 +34,6 @@
                  <!-- OPCIONAIS -->
                 <div class="card-step">
                     <div class="card-header">
-                       <!--  <span class="step-number"> 04 </span> -->
                              <label id="opcionais-title" for="opcionais"> Escolha os complementos : </label>
                         
                     <div id="opcionais-container" class="input-container">
@@ -50,10 +46,9 @@
                 </div>
                     <div class="input-container">
                         <input type="submit" class="submit-btn" value="Criar meu burger!">
-
                     </div>
                     <Message :msg="msg" v-show="msg"/>
-                </form>
+            </form>
     </div>
 </template>
 
@@ -76,7 +71,6 @@
         },
         methods:{
             async getIngredientes(){
-                /* API */
                 const req = await fetch('http://localhost:3001/ingredientes');
                 const data = await req.json();
 
@@ -91,13 +85,12 @@
                     nome: this.nome,
                     pao: this.pao,
                     carne: this.carne,
-                    opcionais: Array.from(this.opcionais), /* objeto array */
+                    opcionais: Array.from(this.opcionais),
                     status: "solicitado"
                 }
 
-                const datajson = JSON.stringify(data); /* transformar em texto */
+                const datajson = JSON.stringify(data);
 
-                /* REQUIsICÃO PARA O JSON E CADASTRAR O PEDIDO*/
                 const req = await fetch('http://localhost:3001/burgers',{
                    method: 'POST',
                    headers: { "content-Type": "application/json" },
@@ -105,13 +98,10 @@
                 });
                 const res = await req.json();
 
-                /*  colocar mensagem no sistema */
-                this.msg = `Pedido N° ${res.id} criado com sucesso`
+                this.msg = `Pedido de ${res.nome} criado com sucesso`
 
-                /* limpar msg */
                 setTimeout(() => this.msg = "", 3000)
 
-                /* limpar campos */
                 this.nome = "";
                 this.carne = "";
                 this.pao = "";
